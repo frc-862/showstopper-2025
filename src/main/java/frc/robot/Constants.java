@@ -5,6 +5,7 @@ import com.ctre.phoenix6.configs.CurrentLimitsConfigs;
 import com.ctre.phoenix6.configs.Pigeon2Configuration;
 import com.ctre.phoenix6.configs.Slot0Configs;
 import com.ctre.phoenix6.configs.TalonFXConfiguration;
+import com.ctre.phoenix6.signals.SensorDirectionValue;
 import com.ctre.phoenix6.swerve.SwerveDrivetrainConstants;
 import com.ctre.phoenix6.swerve.SwerveModuleConstants;
 import com.ctre.phoenix6.swerve.SwerveModuleConstantsFactory;
@@ -192,6 +193,30 @@ public class Constants {
         public static final double ALIGNMENT_TOLERANCE = 1d;
     }
 
+    public class PivotConstants {
+        public static final boolean MOTOR_INVERT = true; // POS power is up
+        public static final int MOTOR_STATOR_CURRENT_LIMIT = 60;
+        public static final boolean MOTOR_BRAKE_MODE = true;
+        public static final double MOTOR_KP = 0;
+        public static final double MOTOR_KI = 0;
+        public static final double MOTOR_KD = 0;
+        public static final double MOTOR_KS = 0;
+        public static final double MOTOR_KV = 3;
+        public static final double MOTOR_KA = 0;
+
+        // Not currently using Motion magic
+        public static final double MAGIC_CRUISE_VEL = 0.01;
+        public static final double MAGIC_ACCEL = 0.02;
+        public static final double MAGIC_JERK = 0.2;
+
+        public static final double ANGLE_TOLERANCE = 0.00208d;
+
+        public static final double ENCODER_OFFSET = 0.61095; // In rotations
+        public static final SensorDirectionValue ENCODER_DIRECTION = SensorDirectionValue.Clockwise_Positive;
+        public static final double ENCODER_TO_MECHANISM_RATIO = 1d;
+        public static final double ROTOR_TO_ENCODER_RATIO = 618.75;
+    }
+
     public class RobotMap {
         public class CAN {
             // Front Left
@@ -215,6 +240,21 @@ public class Constants {
             private static final int kBackRightEncoderId = 34;
 
             public static final int PigeonId = 23;
+
+            
+            //TODO: fill in placehodlders
+            public static final int PIVOT_LEFT_ID = 9;
+            public static final int PIVOT_RIGHT_ID = 10;
+            public static final int PIVOT_CANCODER_ID = 0;
+
+            public static final int INDEXER_ID = 0;
+            public static final int SHOOTER_RIGHT_ID = 0;
+            public static final int SHOOTER_LEFT_ID = 0;
+
+            public static final String CANBUS_FD = "Canivore";
+
+            
+            
         }
         
         public class VisionConstants {

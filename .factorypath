@@ -1,0 +1,4 @@
+<factorypath>
+    <factorypathentry kind="EXTJAR" id="/home/door/.gradle/caches/modules-2/files-2.1/edu.wpi.first.epilogue/epilogue-processor-java/2025.1.1-beta-1/1ecdf0577490a5f667ccfbf4fc326d31f0b8219b/epilogue-processor-java-2025.1.1-beta-1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="EXTJAR" id="/home/door/.gradle/caches/modules-2/files-2.1/edu.wpi.first.epilogue/epilogue-runtime-java/2025.1.1-beta-1/fd210029cf43752ca2106ebfa0dd65c7c7bb66a6/epilogue-runtime-java-2025.1.1-beta-1.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
