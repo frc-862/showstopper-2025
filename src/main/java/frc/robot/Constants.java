@@ -194,7 +194,8 @@ public class Constants {
     }
 
     public class PivotConstants {
-        public static final boolean MOTOR_INVERT = true; // POS power is up
+        public static final boolean MOTOR_RIGHT_INVERT = true; // POS power is up
+        public static final boolean MOTOR_LEFT_INVERT = true; // POS power is up
         public static final int MOTOR_STATOR_CURRENT_LIMIT = 60;
         public static final boolean MOTOR_BRAKE_MODE = true;
         public static final double MOTOR_KP = 0;
@@ -247,9 +248,9 @@ public class Constants {
             public static final int PIVOT_RIGHT_ID = 10;
             public static final int PIVOT_CANCODER_ID = 0;
 
-            public static final int INDEXER_ID = 0;
-            public static final int SHOOTER_RIGHT_ID = 0;
-            public static final int SHOOTER_LEFT_ID = 0;
+            public static final int INDEXER_ID = 11;
+            public static final int SHOOTER_LEFT_ID = 12;
+            public static final int SHOOTER_RIGHT_ID = 13;
 
             public static final String CANBUS_FD = "Canivore";
 
